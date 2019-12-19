@@ -33,7 +33,7 @@
         <hr>
 
         <h3><strong>Question 1</strong></h3>
-        <h4>...</h4>
+        <h4>Are you strong?</h4>
         <select class="chosen-select" id="q1">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -44,7 +44,7 @@
         </select>
 
         <h3><strong>Question 2</strong></h3>
-        <h4>...</h4>
+        <h4>Are you smart?</h4>
         <select class="chosen-select" id="q2">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -56,7 +56,7 @@
 
 
         <h3><strong>Question 3</strong></h3>
-        <h4>...</h4>
+        <h4>Are you fast?</h4>
         <select class="chosen-select" id="q3">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -68,7 +68,7 @@
 
 
         <h3><strong>Question 4</strong></h3>
-        <h4>...</h4>
+        <h4>Can you fly?</h4>
         <select class="chosen-select" id="q4">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -80,7 +80,7 @@
 
 
         <h3><strong>Question 5</strong></h3>
-        <h4>...</h4>
+        <h4>Are you rich?</h4>
         <select class="chosen-select" id="q5">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -92,7 +92,7 @@
 
 
         <h3><strong>Question 6</strong></h3>
-        <h4>...</h4>
+        <h4>Do you have super powers?</h4>
         <select class="chosen-select" id="q6">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -104,7 +104,7 @@
 
 
         <h3><strong>Question 7</strong></h3>
-        <h4>...</h4>
+        <h4>Is you're favorite color blue?</h4>
         <select class="chosen-select" id="q7">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -115,7 +115,7 @@
         </select>
 
         <h3><strong>Question 8</strong></h3>
-        <h4>...</h4>
+        <h4>Is you're favorite color black?</h4>
         <select class="chosen-select" id="q8">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -126,7 +126,7 @@
         </select>
 
         <h3><strong>Question 9</strong></h3>
-        <h4>...</h4>
+        <h4>Is you're favorite color red?</h4>
         <select class="chosen-select" id="q9">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -137,7 +137,7 @@
         </select>
 
         <h3><strong>Question 10</strong></h3>
-        <h4>...</h4>
+        <h4>Is you're favorite color green?</h4>
         <select class="chosen-select" id="q10">
             <option value=""></option>
             <option value="1">1 (Strongly Disagree)</option>
@@ -150,7 +150,7 @@
         <br>
         <br>
 
-        <!-- Submit Button -->
+        
         <button type="submit" class="btn btn-primary btn-lg btn-block" id="submit"><i class="fa fa-check-circle"
                 aria-hidden="true"></i>
             Submit</button>
@@ -165,11 +165,11 @@
 
     </div>
 
-    <!-- Modal -->
+    
     <div id="results-modal" class="modal fade" role="dialog">
         <div class="modal-dialog">
 
-            <!-- Modal content-->
+            
             <div class="modal-content">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -189,7 +189,7 @@
     </div>
 
     <script type="text/javascript">
-        // Chosen CSS
+    
         var config = {
             ".chosen-select": {},
             ".chosen-select-deselect": {
@@ -210,11 +210,9 @@
             $(selector).chosen(config[selector]);
         }
 
-        // Capture the form inputs
         $("#submit").on("click", function (event) {
             event.preventDefault();
 
-            // Form validation
             function validateForm() {
                 var isValid = true;
                 $(".form-control").each(function () {
